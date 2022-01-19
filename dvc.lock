@@ -2,3 +2,32 @@ schema: '2.0'
 stages:
   run_plots_command:
     cmd: dvc plots diff
+  prepare_data:
+    cmd: python src/01_prepare.py --configs=configs/configs.yaml --params=params.yaml
+    deps:
+    - path: configs/configs.yaml
+      md5: 98f266490f00c7c71407649ae8c05172
+      size: 393
+    - path: data/data.xml
+      md5: a304afb96060aad90176268345e10355
+      size: 37891850
+    - path: src/01_prepare.py
+      md5: 9f208f8b69488dae22b35e2b3d8c9139
+      size: 1989
+    - path: src/utils/common.py
+      md5: 8884fcc23979b226f53c094870d6357d
+      size: 936
+    - path: src/utils/data_mgmt.py
+      md5: 522ecf3040edd505a73694768ff1bf09
+      size: 872
+    params:
+      params.yaml:
+        prepare.seed: 300
+        prepare.split: 0.3
+    outs:
+    - path: artifacts/prepared/test.tsv
+      md5: 281d2c9d6534e3b5b75631af1ba41d57
+      size: 7239099
+    - path: artifacts/prepared/train.tsv
+      md5: 312d50d3d35e57493b12dc336d34342d
+      size: 16647220
