@@ -1,0 +1,14 @@
+*.log
+.ipynb_checkpoints
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.idea
+configs/secrets.yaml

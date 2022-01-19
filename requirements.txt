@@ -1,0 +1,11 @@
+tqdm
+dvc
+dvc[s3]
+pandas
+numpy
+Scipy
+pyyaml
+scikit-learn
+lxml
+botocore # aws s3
+-e .

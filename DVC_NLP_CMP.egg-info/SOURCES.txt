@@ -1,0 +1,7 @@
+README.md
+setup.py
+DVC_NLP_CMP.egg-info/PKG-INFO
+DVC_NLP_CMP.egg-info/SOURCES.txt
+DVC_NLP_CMP.egg-info/dependency_links.txt
+DVC_NLP_CMP.egg-info/top_level.txt
+src/__init__.py
