@@ -1,0 +1,4 @@
+schema: '2.0'
+stages:
+  run_plots_command:
+    cmd: dvc plots diff
