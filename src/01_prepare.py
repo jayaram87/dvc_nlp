@@ -13,8 +13,7 @@ logging.basicConfig(
     filename=os.path.join("logs", 'running_logs.log'),
     level=logging.INFO,
     format="[%(asctime)s: %(levelname)s: %(module)s]: %(message)s",
-    filemode="a"
-)
+    filemode="a")
 
 
 def main(config_path, params_path):
