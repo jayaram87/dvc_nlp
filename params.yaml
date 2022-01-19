@@ -8,5 +8,5 @@ featurize:
 
 train:
   seed: 300
-  n_est: 100
+  n_est: 200
   min_split: 16
